@@ -3,35 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="binario.css"/>
+    <link rel="stylesheet" type="text/css" href="binario.css" />
 </head>
-<body>
-    <label>Número Decimal</label>
+<body style="background-color:rgb(202, 210, 253);">
+    <div class="conversão">
+    <h1 align="center"><n>CONVERSOR: Decimal para binário</n></h1>
+    </div>
+    <hr>
+
+    <p align="center">ADICIONE AQUI SEU NUMERO DECIMAL</p>
+    <p align="center">ADICIONE AQUI SEU NUMERO DECIMAL</p>
+    <label>Decimal</label>
     <input name="decimal" id="decimal_id" />
-    <button onclick="converte_octal()">Converter</button>
+    <button class="converter" onclick="converte_binario()">Converter</button>
     <br>
-    <label>Octal</label>
-    <input name="octal" id="octal_id" />
+    <div>
+        <label>Binario</label>
+        <input name="binario" id="binario_id" />
+    </div>
+   
 
 
     <script>
-        function converte_octal(){
+        function converte_binario(){
             var decimal = document.getElementById("decimal_id").value;
-            var octal = decimal_octal(Number(decimal));
-            document.getElementById("octal_id").value = octal;
+            var binario = decimal_binario(Number(decimal));
+            document.getElementById("binario_id").value = binario;
         }
 
-        function decimal_octal(numero){    
-            if(numero < 8){
+        function decimal_binario(numero){    
+            if(numero < 2){
                 return numero.toString();
             }
-            octal = "";
-            while(numero > 7){
-                resto = numero % 8;
-                octal = resto.toString()+octal;
-                numero = Math.floor(numero/8);
+            binario = "";
+            while(numero > 1){
+                resto = numero % 2;
+                binario = resto.toString()+binario;
+                numero = Math.floor(numero/2);
             }
-            return numero.toString()+octal;
+            return numero.toString()+binario;
         }
     </script>
 </body>

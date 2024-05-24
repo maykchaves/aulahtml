@@ -1,0 +1,43 @@
+h1 {
+    color: white;
+}
+
+.primeira-div {
+    background-color: rgb(94, 226, 165);
+    width: 150px;
+    float: left;
+    text-align: center;
+}
+.segunda-div {
+    background-color: rgb(243, 250, 247);
+    width: 150px;
+    float: left;
+    text-align: center;
+    width: 435px;
+    height: 400px;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    font-size: 12px;
+}
+.terceira-div {
+    background-color: rgb(94, 226, 165);
+    width: 150px;
+    float: left;
+    text-align: center;
+    margin-top: 5px;
+    height: 410px;
+}
+.quarta-div {
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    float: left;
+    text-align: left;
+    margin-top: 5px;
+}
+body {
+    background-color: rgb(115, 180, 233);
+    margin: 150px;
+    width: 600px;
+    margin-top: 0;
+}
